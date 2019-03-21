@@ -76,7 +76,7 @@ const loadElement = element => new Promise((resolve) => {
 
 async function dynamicFile(file, options) {
   try {
-    const list = formatFileList(file, option);
+    const list = formatFileList(file);
     const elementList = list.map(createElement);
     await Promise.all(elementList.map((i) => {
       return loadElement(i);
