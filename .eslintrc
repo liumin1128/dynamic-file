@@ -36,7 +36,7 @@
     "camelcase": [0],
     "no-console": [0],
     "max-len": [0],
-    "indent": [2, 2],
+
     "semi": [2],
     "object-curly-spacing": ["error", "always"],
     "array-bracket-spacing": ["error", "always"],
