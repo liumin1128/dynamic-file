@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "dev": "rollup -c --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "babel-plugin-external-helpers": "^6.22.0",
+        "babel-preset-latest": "^6.24.1",
+        "rollup-plugin-babel": "^4.3.2",
+        "rollup-plugin-node-resolve": "^4.0.1"
+    }
+}

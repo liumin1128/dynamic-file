@@ -1,0 +1,29 @@
+sudo: false
+language: node_js
+
+addons:
+  apt:
+    packages:
+    - sshpass
+
+node_js:
+  - '9'
+
+before_script: 
+  - echo ${X_TEST}
+  - echo ${X_TEST}
+  - echo ${X_TEST}
+
+  - echo "开始安装依赖~~~"
+  - yarn
+  - echo "依赖安装完毕~~~"
+script: 
+  - echo "开始编译项目~~~"
+  - echo ${X_TEST}
+  - echo ${X_TEST}
+  - echo ${X_TEST}
+  - yarn build
+  - echo "项目编译成功~~~"
+  - echo "开始推送~~~"
+  - sshpass -p ${X_PS} scp -o stricthostkeychecking=no -r ./${X_LOCAL} ${X_SERVER}:${X_PATH}
+  - echo "推送成功~~~"
