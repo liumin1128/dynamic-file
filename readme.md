@@ -16,7 +16,7 @@ yarn add dynamic-file
 ```
 import dynamicFile from 'dynamic-file'
 
-<script src="../dist/main.js"></script>
+// or <script src="../dist/main.js"></script>
   
 if(!window.jquery) {
     dynamicFile([
@@ -32,7 +32,7 @@ if(!window.jquery) {
 
 ## why?
 
-前端开发过程中，经常需要加载一些外部资源，类似各种sdk，css主题。有时我们不希望在head中声名，因为这个文件可能只在某些页面中，甚至某些组件中才被需要，全局加载无疑会带来不必要的性能问题，所以可能会=会需要一种运行在浏览器端，动态加载css或js的方法。
+前端开发需求总数层出不穷，有时需要在某个时刻、某个页面、某个组件，甚至某个逻辑中加载一些css、js文件，比如微信sdk，地图插件、主题css等等，还要在加载完成之后，执行一些逻辑。这些第三方文件，往往只在一个场景用到，并不想放在全局，而第三方文件又没办法通过dynamic import打包进来，此时就需要某种动态加载任意资源的方法了。
 
 只需简单声明即可完成加载，该方法返回一个promise，等待文件加载完成调用后续逻辑。
 
