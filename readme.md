@@ -16,7 +16,7 @@ yarn add dynamic-file
 ```
 import dynamicFile from 'dynamic-file'
 
-// or <script src="../dist/main.js"></script>
+// or <script src="../dist/boundle.js"></script>
   
 if(!window.jquery) {
     dynamicFile([
