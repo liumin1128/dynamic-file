@@ -4,10 +4,9 @@
     "dev": "rollup -c --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Load JS or CSS files dynamically and return a promise after loading，Loading JS or CSS files dynamically and returning a promise after loading, without any dependencies。",
   "main": "dist/bundle.js",
-  "author": "liumin1128",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.0",
@@ -24,5 +23,20 @@
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.1",
     "rollup-plugin-node-resolve": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liumin1128/dynamic-file.git"
+  },
+  "keywords": [
+    "js",
+    "umd",
+    "commonjs",
+    "dynamic"
+  ],
+  "author": "liumin",
+  "bugs": {
+    "url": "https://github.com/liumin1128/dynamic-file/issues"
+  },
+  "homepage": "https://github.com/liumin1128/dynamic-file#readme"
 }
