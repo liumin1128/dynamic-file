@@ -1,7 +1,6 @@
 {
   "name": "dynamic-file",
   "scripts": {
-    "publish": "sh ./publish.sh",
     "dev": "rollup -c --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
